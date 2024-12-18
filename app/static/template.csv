@@ -1,0 +1,5 @@
+Loan_ID,Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area,Loan_Status
+Any_value,Male,Yes ,0,Graduate,No,whole number (integer),whole number (integer),whole number (integer),whole number (integer),1,Rural,N
+,Female,No,1,Not Graduate,Yes,decimal number (float),decimal number (float),66,360,0,Urban,Y
+,,,2,,,,,,,,Semiurban,
+,,,3+,,,,,,,,,

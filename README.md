@@ -44,17 +44,17 @@ This Dockerfile does the following:
 To build the Docker image, run the following command in the root directory of your project (where the `Dockerfile` is located):
 
 ```bash
-docker build -t python-app .
+docker build -t myapp-image .
 ```
 
 ---
 
 ## Exposing the Application Port
 
-The application is configured to listen on port 9000 by default. To expose this port on your host machine, you should map the container's internal port 9000 to a port on your host when running the container:
+The application is configured to listen on port 9000 by default. To expose this port on your host machine, you should map the container's internal port 9000 to a port on your host when running the container in interative mode:
 
 ```bash
-docker run -d -p 9000:9000 python-app
+docker run -it -d -p 9000:9000 myapp-image
 ```
 
 You can access your application by navigating to http://localhost:9000 (or the host’s IP address) in your browser or via an HTTP request.
